@@ -11,6 +11,4 @@ EXTRA_OEMAKE = "DESTDIR=${D} PREFIX=/usr LDFLAGS="${LDFLAGS} -Wl,--hash-style=gn
 
 do_install() {
     oe_runmake install
-    install -d ${D}/etc
-    install ${S}/dnsmasq.conf.example ${D}/etc/dnsmasq.conf
 }
